@@ -1,0 +1,26 @@
+:root{
+  --bg:#0b1020;
+  --panel:#0f1724;
+  --accent:#ffd166;
+  --muted:#9aa4b2;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+}
+
+*{box-sizing:border-box}
+html,body,#game-root{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#07101a);color:#e6eef8}
+#game-root{display:flex;flex-direction:column;align-items:stretch;gap:8px;padding:10px}
+
+header{display:flex;justify-content:space-between;align-items:center}
+h1{font-size:20px;margin:0;padding:6px 8px;background:rgba(255,255,255,0.02);border-radius:8px}
+#hud{display:flex;gap:12px;font-weight:600;color:var(--muted)}
+
+#gameCanvas{width:100%;height:calc(100vh - 200px);background:transparent;border-radius:12px;display:block;touch-action:none}
+
+#controls{display:flex;gap:8px;align-items:center;justify-content:center;padding:6px 0;flex-wrap:wrap}
+button{padding:10px 14px;border-radius:10px;border:0;background:var(--panel);color:var(--accent);font-weight:700;font-size:16px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+#instructions{color:var(--muted);font-size:13px;padding:6px 8px}
+
+footer{display:flex;justify-content:center;color:var(--muted);font-size:12px;padding:6px 0}
+@media(min-width:800px){
+  #gameCanvas{height:600px}
+}
