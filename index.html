@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Star Tap — Mobile Web Game</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#0b1020">
+</head>
+<body>
+  <main id="game-root">
+    <header>
+      <h1>Star Tap</h1>
+      <div id="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div>Lives: <span id="lives">3</span></div>
+      </div>
+    </header>
+    <canvas id="gameCanvas"></canvas>
+    <div id="controls">
+      <button id="startBtn">Start</button>
+      <button id="muteBtn">🔊</button>
+      <div id="instructions">Tap falling stars to collect them. Avoid missing too many!</div>
+    </div>
+    <footer>
+      <small>Made with ❤️ — Open in mobile browser. Long-press to add to home screen.</small>
+    </footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
